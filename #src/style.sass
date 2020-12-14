@@ -345,6 +345,7 @@ body
             background-color: #000000
             width: max-content
             cursor: pointer
+            white-space: nowrap
             &:hover
                 background: #1F1F1F
     &__mailing
@@ -431,11 +432,17 @@ body
         height: 100%
         &__wrap
             display: block
+            padding: 25px 0 25px
         &__items
-            width: 96%
+            width: auto
+            height: 100%
             padding: 10px
+            margin: 0
     .footer__categories h4
         margin-left: 0
+    .content__items_bottom-text
+        width: 100%
+        padding: 10px
 @media (max-width: 768px)
     .menu__nav-burger
         position: absolute
@@ -499,7 +506,8 @@ body
         font-size: 11px
 @media screen and ( max-width: 683px )
     .footer__items
-        margin-bottom: 100px
+        height: 100%
+        width: auto
     .news-receipts__items
         display: flex
         align-items: center
@@ -516,6 +524,8 @@ body
     .porten__logo
         font-size: 32px
         line-height: 40px
+        &-wrap
+            padding: 70px 50px
         &2
             font-size: 17px
     .content__items_bottom 
@@ -530,5 +540,6 @@ body
         height: 100%
         &__text
             padding: 10px
+            margin-top: 0
     .brends h3
         font-size: 24px 

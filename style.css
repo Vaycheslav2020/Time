@@ -416,6 +416,7 @@ body {
   width: -webkit-max-content;
   width: max-content;
   cursor: pointer;
+  white-space: nowrap;
 }
 .footer__categories_list-li:hover {
   background: #1F1F1F;
@@ -534,14 +535,22 @@ body {
   }
   .footer__wrap {
     display: block;
+    padding: 25px 0 25px;
   }
   .footer__items {
-    width: 96%;
+    width: auto;
+    height: 100%;
     padding: 10px;
+    margin: 0;
   }
 
   .footer__categories h4 {
     margin-left: 0;
+  }
+
+  .content__items_bottom-text {
+    width: 100%;
+    padding: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -630,7 +639,8 @@ body {
 }
 @media screen and (max-width: 683px) {
   .footer__items {
-    margin-bottom: 100px;
+    height: 100%;
+    width: auto;
   }
 
   .news-receipts__items {
@@ -660,6 +670,9 @@ body {
     font-size: 32px;
     line-height: 40px;
   }
+  .porten__logo-wrap {
+    padding: 70px 50px;
+  }
   .porten__logo2 {
     font-size: 17px;
   }
@@ -683,6 +696,7 @@ body {
   }
   .porten__text {
     padding: 10px;
+    margin-top: 0;
   }
 
   .brends h3 {
